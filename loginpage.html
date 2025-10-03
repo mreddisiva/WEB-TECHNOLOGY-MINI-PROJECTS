@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            background-color: rgb(151, 28, 200);
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #f3f0f0;
+        }
+
+        h2 {
+            color: white;
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            width: 100%;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #3bd452;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: white;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            border: 2px solid #ccc;
+            font-size: 14px;
+        }
+
+        button {
+            width: 45%;
+            padding: 10px;
+            background-color: #2bd6f4;
+            color: rgb(248, 244, 244);
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-right: 10px;
+        }
+
+        button:last-child {
+            margin-right: 0;
+        }
+
+        .button-group {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <h1>Login Page</h1>
+        <h2>User Credentials</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required autocomplete="username">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required autocomplete="current-password">
+
+        <div class="button-group">
+            <button type="submit">Login</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</body>
+
+</html>

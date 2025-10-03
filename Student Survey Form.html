@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Student Survey Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9fafb;
+      color: #333;
+      margin: 20px;
+      line-height: 1.6;
+    }
+
+    h1,
+    h2,
+    h3 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    form {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 20px 30px;
+      border-radius: 8px;
+    }
+
+    label {
+      display: inline-block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      color: #34495e;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px 10px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      border-color: #2980b9;
+    }
+
+    textarea {
+      min-height: 80px;
+      resize: vertical;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 10px 15px;
+      text-align: left;
+      vertical-align: middle;
+    }
+
+    th {
+      background-color: #e8f0fe;
+      color: #2c3e50;
+      font-weight: 700;
+    }
+
+    p {
+      font-weight: 600;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      color: #2c3e50;
+    }
+
+    button {
+      background-color: #2980b9;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      display: block;
+      margin: 0 auto 30px auto;
+    }
+
+    h3 {
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Student Survey Form</h1>
+  <h2>MOHAN BABU UNIVERSITY</h2>
+
+  <form action="" method="post">
+    <h3>Student Details</h3>
+
+    <label for="first-name">First Name</label>
+    <input type="text" name="first_name" id="first-name" required />
+
+    <label for="last-name">Last Name</label>
+    <input type="text" name="last_name" id="last-name" />
+
+    <label for="date">Date</label>
+    <input type="date" name="date" id="date" />
+
+    <label for="program">Choose your Program:</label>
+    <select name="program" id="program">
+      <option value="CSE">CSE</option>
+      <option value="DS">DS</option>
+      <option value="CS">CS</option>
+      <option value="IT">IT</option>
+      <option value="AIML">AIML</option>
+    </select>
+
+    <label for="year">Year</label>
+    <input type="number" name="year" id="year" />
+
+    <h3>Please rate the following aspects of your education</h3>
+
+    <p>Curriculum and classes for the term</p>
+    <table>
+      <tr>
+        <th>Queries on Curriculum</th>
+        <th>Strongly Disagree</th>
+        <th>Disagree</th>
+        <th>Neutral</th>
+        <th>Agree</th>
+        <th>Strongly Agree</th>
+      </tr>
+      <tr>
+        <td>The class descriptions accurately described the content.</td>
+        <td><input type="radio" name="curriculum_q1" value="1" /></td>
+        <td><input type="radio" name="curriculum_q1" value="2" /></td>
+        <td><input type="radio" name="curriculum_q1" value="3" /></td>
+        <td><input type="radio" name="curriculum_q1" value="4" /></td>
+        <td><input type="radio" name="curriculum_q1" value="5" /></td>
+      </tr>
+      <tr>
+        <td>I was academically prepared for the classes.</td>
+        <td><input type="radio" name="curriculum_q2" value="1" /></td>
+        <td><input type="radio" name="curriculum_q2" value="2" /></td>
+        <td><input type="radio" name="curriculum_q2" value="3" /></td>
+        <td><input type="radio" name="curriculum_q2" value="4" /></td>
+        <td><input type="radio" name="curriculum_q2" value="5" /></td>
+      </tr>
+      <tr>
+        <td>The class sizes were appropriate.</td>
+        <td><input type="radio" name="curriculum_q3" value="1" /></td>
+        <td><input type="radio" name="curriculum_q3" value="2" /></td>
+        <td><input type="radio" name="curriculum_q3" value="3" /></td>
+        <td><input type="radio" name="curriculum_q3" value="4" /></td>
+        <td><input type="radio" name="curriculum_q3" value="5" /></td>
+      </tr>
+      <tr>
+        <td>The classes started and ended on time.</td>
+        <td><input type="radio" name="curriculum_q4" value="1" /></td>
+        <td><input type="radio" name="curriculum_q4" value="2" /></td>
+        <td><input type="radio" name="curriculum_q4" value="3" /></td>
+        <td><input type="radio" name="curriculum_q4" value="4" /></td>
+        <td><input type="radio" name="curriculum_q4" value="5" /></td>
+      </tr>
+      <tr>
+        <td>The classes increased my knowledge of the subject matter.</td>
+        <td><input type="radio" name="curriculum_q5" value="1" /></td>
+        <td><input type="radio" name="curriculum_q5" value="2" /></td>
+        <td><input type="radio" name="curriculum_q5" value="3" /></td>
+        <td><input type="radio" name="curriculum_q5" value="4" /></td>
+        <td><input type="radio" name="curriculum_q5" value="5" /></td>
+      </tr>
+      <tr>
+        <td>The overall quality of the classes was excellent.</td>
+        <td><input type="radio" name="curriculum_q6" value="1" /></td>
+        <td><input type="radio" name="curriculum_q6" value="2" /></td>
+        <td><input type="radio" name="curriculum_q6" value="3" /></td>
+        <td><input type="radio" name="curriculum_q6" value="4" /></td>
+        <td><input type="radio" name="curriculum_q6" value="5" /></td>
+      </tr>
+      <tr>
+        <td>I would recommend these classes to other students.</td>
+        <td><input type="radio" name="curriculum_q7" value="1" /></td>
+        <td><input type="radio" name="curriculum_q7" value="2" /></td>
+        <td><input type="radio" name="curriculum_q7" value="3" /></td>
+        <td><input type="radio" name="curriculum_q7" value="4" /></td>
+        <td><input type="radio" name="curriculum_q7" value="5" /></td>
+      </tr>
+    </table>
+
+    <h3>Materials</h3>
+    <table>
+      <tr>
+        <th></th>
+        <th>Strongly Disagree</th>
+        <th>Disagree</th>
+        <th>Neutral</th>
+        <th>Agree</th>
+        <th>Strongly Agree</th>
+      </tr>
+      <tr>
+        <td>The objectives and requirements were clearly stated.</td>
+        <td><input type="radio" name="materials_q1" value="1" /></td>
+        <td><input type="radio" name="materials_q1" value="2" /></td>
+        <td><input type="radio" name="materials_q1" value="3" /></td>
+        <td><input type="radio" name="materials_q1" value="4" /></td>
+        <td><input type="radio" name="materials_q1" value="5" /></td>
+      </tr>
+      <tr>
+        <td>The textbooks and reading materials were helpful.</td>
+        <td><input type="radio" name="materials_q2" value="1" /></td>
+        <td><input type="radio" name="materials_q2" value="2" /></td>
+        <td><input type="radio" name="materials_q2" value="3" /></td>
+        <td><input type="radio" name="materials_q2" value="4" /></td>
+        <td><input type="radio" name="materials_q2" value="5" /></td>
+      </tr>
+      <tr>
+        <td>The materials were up to date and relevant.</td>
+        <td><input type="radio" name="materials_q3" value="1" /></td>
+        <td><input type="radio" name="materials_q3" value="2" /></td>
+        <td><input type="radio" name="materials_q3" value="3" /></td>
+        <td><input type="radio" name="materials_q3" value="4" /></td>
+        <td><input type="radio" name="materials_q3" value="5" /></td>
+      </tr>
+      <tr>
+        <td>The materials helped me understand the topics better.</td>
+        <td><input type="radio" name="materials_q4" value="1" /></td>
+        <td><input type="radio" name="materials_q4" value="2" /></td>
+        <td><input type="radio" name="materials_q4" value="3" /></td>
+        <td><input type="radio" name="materials_q4" value="4" /></td>
+        <td><input type="radio" name="materials_q4" value="5" /></td>
+      </tr>
+    </table>
+
+    <h3>Additional Comments</h3>
+    <label for="comments">Please provide any additional feedback or suggestions:</label>
+    <textarea name="comments" id="comments" placeholder="Your comments here..."></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
